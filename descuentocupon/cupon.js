@@ -32,11 +32,15 @@ button.addEventListener("click", mostrarResultado);
 
 
 
+
+
 function mostrarResultado() {
     
     let b = claves.find(dis = (nombre) => {
-        return nombre==descuento.value;
-            } );  
+
+      return nombre==descuento.value;
+
+    } );  
 
     console.log(b==descuento.value)
 if (b==descuento.value){
