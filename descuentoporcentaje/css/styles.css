@@ -1,0 +1,52 @@
+h1{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+button{
+  padding: 10px;
+  font-weight: 600;
+  background-color: gray;
+  color: white;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+}
+
+.resultado{
+  width: 500px;
+  margin-top: 60px;
+margin: 0 auto;
+text-align: center;
+  
+}
+
+.valormal{
+  width: auto;
+  font-weight: 700;
+  color: red;
+  border: 2px solid;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.valor{
+  width: auto;
+  font-weight: 600;
+  color: rgb(124, 158, 252);
+  border: 1px solid;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
