@@ -35,7 +35,8 @@ button.addEventListener("click", mostrarResultado);
 
 
 function mostrarResultado() {
-    
+ 
+   
     let b = claves.find(dis = (nombre) => {
 
       return nombre==descuento.value;
@@ -57,7 +58,10 @@ if (b==descuento.value){
   descuento.value="";
   removeClassBlue();
 
+};
+   
+if (formula == 0){
+  location.reload();
 }
-    
     
 }
