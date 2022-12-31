@@ -1,4 +1,4 @@
-const precio = document.querySelector(".precio").value;
+const precio = document.querySelector(".precio");
 const descuento = document.querySelector(".descuento");
 const button =document.querySelector(".button");
 const resultado =document.querySelector(".resultado");
@@ -36,7 +36,6 @@ button.addEventListener("click", mostrarResultado);
 
 function mostrarResultado() {
  
-   
     let b = claves.find(dis = (nombre) => {
 
       return nombre==descuento.value;
@@ -45,17 +44,17 @@ function mostrarResultado() {
 
     console.log(b==descuento.value)
 if (b==descuento.value){
-  formula = (Number(precio)* (100 - Number(cupones[descuento.value]) ) /100);
+  formula = (Number(precio.value)* (100 - Number(cupones[descuento.value]) ) /100);
   resultado.appendChild(valor);
   valor.innerHTML="El valor final de tu compra es: "+formatterPeso.format(formula);
   addClassBlue();
   descuento.value="";
-  
-
+  precio.value = "";
 }else{
   resultado.appendChild(valor);
   valor.innerHTML="Por favor digita un cupon correcto";
   descuento.value="";
+  precio.value = "";
   removeClassBlue();
 
 };
